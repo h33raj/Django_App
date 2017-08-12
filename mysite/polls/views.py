@@ -12,6 +12,7 @@ def index(request):
 	latest_question_list = Question.objects.order_by('-pub_date')[:5]
     	context = {'latest_question_list': latest_question_list}
     	response = render(request, 'polls/index.html', context)
+	request.session.set_test_cookie()
 	response['hrj'] = 'hello'
 	return response
 	
