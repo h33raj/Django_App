@@ -24,3 +24,9 @@ class Choice(models.Model):
 
     def __str__(self):
 	return self.choice_text
+
+
+class Document(models.Model):
+    description = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to='documents/%Y/%m/%d/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)   
