@@ -30,3 +30,7 @@ class Document(models.Model):
     description = models.CharField(max_length=255, blank=True)
     document = models.FileField(upload_to='documents/%Y/%m/%d/')
     uploaded_at = models.DateTimeField(auto_now_add=True)   
+
+class Privileges(models.Model):
+    id = models.IntegerField(default=0)
+    Privilege = models.CharField(max_length=40)
