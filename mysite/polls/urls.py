@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^upload/$', views.model_form_upload, name='upload'),
     url(r'^login/$', auth_views.login, {'template_name': 'polls/login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
-    url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^', include('django.contrib.auth.urls')),
     url(r'^signup/$', views.signup, name='signup'),
 	url(r'^specifics/(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
 ]

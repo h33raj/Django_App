@@ -10,22 +10,23 @@ from django.core import serializers
 
 from .models import Choice, Question, Document
 from .forms import DocumentForm
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, authenticate
+from .models import SignUpForm
 
 # Create your views here.
 
 def signup(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('home')
+            return redirect('index')
     else:
-        form = UserCreationForm()
+        form = SignUpForm()
     return render(request, 'polls/signup.html', {'form': form})
 
 def index(request):
@@ -34,12 +35,12 @@ def index(request):
 	response = render(request, 'polls/index.html', context)
 	request.session.set_test_cookie()
 	#XMLSerializer = serializers.get_serializer('xml')
-	#XMLSerializer = serializers.get_serializer("xml")
+	#XMLSerializer = serializers.get_serializer("xml")	 
 	#xml_serializer = XMLSerializer()
 	#with open("file.xml", "w") as out:
 	#		xml_serializer.serialize(Question.objects.all(), stream=out)
 	#data = xml_serializer.getvalue()
-	#return response
+	return response
 
 def simple_upload(request):
 	if request.method == 'POST' and request.FILES['myfile']:
