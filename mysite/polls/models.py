@@ -32,5 +32,5 @@ class Document(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)   
 
 class Privileges(models.Model):
-    id = models.IntegerField(default=0)
+    id = models.AutoField(primary_key=True)
     Privilege = models.CharField(max_length=40)
