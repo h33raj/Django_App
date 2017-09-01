@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import os
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
@@ -13,7 +14,38 @@ from .forms import DocumentForm
 from django.contrib.auth import login, authenticate
 from .models import SignUpForm
 
+import logging
+from django.contrib.auth.signals import user_logged_in, user_logged_out, user_login_failed
+from django.dispatch import receiver
+
 # Create your views here.
+log = logging.getLogger(__name__)
+
+@receiver(user_logged_in)
+def user_logged_in_callback(sender, request, user, **kwargs):
+
+    ip = request.META.get('REMOTE_ADDR')
+    log.debug('login user: {user} via ip: {ip}'.format(
+        user=user,
+        ip=ip
+    ))
+
+@receiver(user_logged_out)
+def user_logged_out_callback(sender, request, user, **kwargs):
+
+    ip = request.META.get('REMOTE_ADDR')
+
+    log.debug('logout user: {user} via ip: {ip}'.format(
+        user=user,
+        ip=ip
+    ))
+
+@receiver(user_login_failed)
+def user_login_failed_callback(sender, credentials, **kwargs):
+
+    log.warning('logout failed for: {credentials}'.format(
+        credentials=credentials,
+    ))
 
 def signup(request):
     if request.method == 'POST':

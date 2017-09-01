@@ -1,0 +1,2 @@
+logout user: kozhi via ip: 127.0.0.1
+logout failed for: {'username': u'aa;;', 'password': '********************'}
