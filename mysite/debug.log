@@ -1687,3 +1687,185 @@ Not Found: /.git/HEAD
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /polls/upload HTTP/1.1" 301 0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'polls.urls' from '/home/hrj/Owasp/Django_App/mysite/polls/urls.pyc'> (None:None) ^polls/>"
+Not Found: /robots.txt
+"GET /robots.txt HTTP/1.1" 404 2193
+"GET /polls/upload/ HTTP/1.1" 200 532
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/upload/.git/HEAD
+"GET /polls/upload/.git/HEAD HTTP/1.1" 404 4704
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/.git/HEAD
+"GET /polls/.git/HEAD HTTP/1.1" 404 4683
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'polls.urls' from '/home/hrj/Owasp/Django_App/mysite/polls/urls.pyc'> (None:None) ^polls/>"
+Not Found: /.git/HEAD
+"GET /.git/HEAD HTTP/1.1" 404 2190
+(0.000) BEGIN; args=None
+(0.003) INSERT INTO "polls_document" ("description", "document", "uploaded_at") VALUES ('aa', 'documents/2017/09/01/solution.txt', '2017-09-01 15:33:15.169155'); args=[u'aa', u'documents/2017/09/01/solution.txt', u'2017-09-01 15:33:15.169155']
+"POST /polls/upload/ HTTP/1.1" 302 0
+(0.001) SELECT "polls_question"."id", "polls_question"."question_text", "polls_question"."pub_date" FROM "polls_question" ORDER BY "polls_question"."pub_date" DESC LIMIT 5; args=()
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'ivhicwk0q60oiqumqphlaurqss5y4kn8' LIMIT 1; args=(u'ivhicwk0q60oiqumqphlaurqss5y4kn8',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'ivhicwk0q60oiqumqphlaurqss5y4kn8', 'MTMwNTc2NzAyMjQ0MGQ5MjQ5Y2ZmM2ZkNmUwYmIzNzNkNWIyNWZjZTp7InRlc3Rjb29raWUiOiJ3b3JrZWQifQ==', '2017-09-15 15:33:15.901602'; args=(u'ivhicwk0q60oiqumqphlaurqss5y4kn8', u'MTMwNTc2NzAyMjQ0MGQ5MjQ5Y2ZmM2ZkNmUwYmIzNzNkNWIyNWZjZTp7InRlc3Rjb29raWUiOiJ3b3JrZWQifQ==', u'2017-09-15 15:33:15.901602')
+"GET /polls/ HTTP/1.1" 200 97
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/.git/HEAD
+"GET /polls/.git/HEAD HTTP/1.1" 404 4683
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'polls.urls' from '/home/hrj/Owasp/Django_App/mysite/polls/urls.pyc'> (None:None) ^polls/>"
+Not Found: /.git/HEAD
+"GET /.git/HEAD HTTP/1.1" 404 2190
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/media/documents/2017/08/16/14AB16.pptx.jpg
+"GET /polls/media/documents/2017/08/16/14AB16.pptx.jpg HTTP/1.1" 404 4782
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/media/documents/2017/08/16/14AB16.pptx.jpg/.git/HEAD
+"GET /polls/media/documents/2017/08/16/14AB16.pptx.jpg/.git/HEAD HTTP/1.1" 404 4812
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/media/documents/2017/08/16/.git/HEAD
+"GET /polls/media/documents/2017/08/16/.git/HEAD HTTP/1.1" 404 4764
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/media/documents/2017/08/.git/HEAD
+"GET /polls/media/documents/2017/08/.git/HEAD HTTP/1.1" 404 4755
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/media/documents/2017/.git/HEAD
+"GET /polls/media/documents/2017/.git/HEAD HTTP/1.1" 404 4746
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/media/documents/.git/HEAD
+"GET /polls/media/documents/.git/HEAD HTTP/1.1" 404 4731
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/media/.git/HEAD
+"GET /polls/media/.git/HEAD HTTP/1.1" 404 4701
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/.git/HEAD
+"GET /polls/.git/HEAD HTTP/1.1" 404 4683
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'polls.urls' from '/home/hrj/Owasp/Django_App/mysite/polls/urls.pyc'> (None:None) ^polls/>"
+Not Found: /.git/HEAD
+"GET /.git/HEAD HTTP/1.1" 404 2190
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /polls/media/documents/2017/08/16/14AB16.pptx.jpg HTTP/1.1" 200 60370
+Not Found: /polls/media/documents/2017/08/16/14AB16.pptx.jpg/.git/HEAD
+"GET /polls/media/documents/2017/08/16/14AB16.pptx.jpg/.git/HEAD HTTP/1.1" 404 1900
+Not Found: /polls/media/documents/2017/08/16/.git/HEAD
+"GET /polls/media/documents/2017/08/16/.git/HEAD HTTP/1.1" 404 1852
+Not Found: /polls/media/documents/2017/08/.git/HEAD
+"GET /polls/media/documents/2017/08/.git/HEAD HTTP/1.1" 404 1843
+Not Found: /polls/media/documents/2017/.git/HEAD
+"GET /polls/media/documents/2017/.git/HEAD HTTP/1.1" 404 1834
+Not Found: /polls/media/documents/.git/HEAD
+"GET /polls/media/documents/.git/HEAD HTTP/1.1" 404 1819
+Not Found: /polls/media/.git/HEAD
+"GET /polls/media/.git/HEAD HTTP/1.1" 404 1789
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /polls/.git/HEAD
+"GET /polls/.git/HEAD HTTP/1.1" 404 5046
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'polls.urls' from '/home/hrj/Owasp/Django_App/mysite/polls/urls.py'> (None:None) ^polls/>"
+Not Found: /.git/HEAD
+"GET /.git/HEAD HTTP/1.1" 404 2190
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
