@@ -157,7 +157,6 @@ LOGGING = {
         },
         'polls': {
             'handlers': ['applogfile',],
-            'level': 'DEBUG',
         },
     },
 }

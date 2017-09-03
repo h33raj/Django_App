@@ -2,3 +2,4 @@ logout failed for: {'username': u'aaa;;', 'password': '********************'}
 logout user: hrj via ip: 127.0.0.1
 login user: hrj via ip: 127.0.0.1
 logout user: hrj via ip: 127.0.0.1
+login user: hrj via ip: 127.0.0.1
